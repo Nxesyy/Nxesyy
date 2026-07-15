@@ -26,8 +26,7 @@ I am a software engineering student who enjoys building clean, useful web experi
 ## GitHub Stats
 
 <p>
-  <img height="170" alt="Nxesyy's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Nxesyy&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true">
-  <img height="170" alt="Nxesyy's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nxesyy&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true">
+  <img alt="Nxesyy's GitHub contribution summary" src="https://raw.githubusercontent.com/Nxesyy/Nxesyy/profile-summary-card-output/github_dark/0-profile-details.svg">
 </p>
 
 <a href="https://www.instagram.com/nxesyy?igsh=MXBwbmMzbGsyNnZsOQ==">
