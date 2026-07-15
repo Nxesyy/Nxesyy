@@ -23,6 +23,13 @@ I am a software engineering student who enjoys building clean, useful web experi
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
+## GitHub Stats
+
+<p>
+  <img height="170" alt="Nxesyy's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Nxesyy&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true">
+  <img height="170" alt="Nxesyy's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nxesyy&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true">
+</p>
+
 <a href="https://www.instagram.com/nxesyy?igsh=MXBwbmMzbGsyNnZsOQ==">
   <img alt="Open Nxesyy's Instagram" src="https://img.shields.io/badge/Instagram-Visit%20profile-E4405F?style=for-the-badge&amp;logo=instagram&amp;logoColor=white">
 </a>
