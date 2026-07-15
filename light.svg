@@ -1,8 +1,8 @@
 <svg width="100%" viewBox="0 0 1180 610" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gesang Rahmatulloh Dianiko - developer profile header">
 <defs>
   <clipPath id="canvasClip"><rect x="0" y="0" width="1180" height="610" rx="28"/></clipPath>
-  <clipPath id="leftClip"><rect x="24" y="24" width="420" height="562" rx="18"/></clipPath>
-  <clipPath id="rightClip"><rect x="464" y="24" width="692" height="562" rx="18"/></clipPath>
+  <clipPath id="leftClip"><rect x="24" y="24" width="430" height="562" rx="18"/></clipPath>
+  <clipPath id="rightClip"><rect x="454" y="24" width="702" height="562" rx="18"/></clipPath>
 
   <radialGradient id="orbBlue" cx="50%" cy="50%" r="50%">
     <stop offset="0%" stop-color="#2563EB" stop-opacity="0.22"/>
@@ -117,16 +117,17 @@
   <rect x="1.5" y="1.5" width="1177" height="607" rx="27" fill="none" stroke="rgba(15,23,42,0.06)" stroke-width="1"/>
 
   <!-- ============ LEFT PANEL ============ -->
+  <rect x="24" y="24" width="1132" height="562" rx="18" fill="url(#panelFill)" stroke="rgba(15,23,42,0.08)" stroke-width="1"/>
+  <line x1="24" y1="66" x2="1156" y2="66" stroke="rgba(15,23,42,0.08)"/>
+  <line x1="454" y1="66" x2="454" y2="586" stroke="rgba(15,23,42,0.08)"/>
+  <rect x="24" y="24" width="1132" height="4" fill="url(#scanGrad)" opacity="0.5">
+    <animate attributeName="y" values="24;586;24" dur="5.8s" repeatCount="indefinite"/>
+  </rect>
   <g clip-path="url(#leftClip)">
-    <rect x="24" y="24" width="420" height="562" rx="18" fill="url(#panelFill)"/>
-    <rect x="24" y="24" width="420" height="562" rx="18" fill="none" stroke="rgba(15,23,42,0.08)" stroke-width="1"/>
-    <rect x="24" y="24" width="420" height="2" fill="rgba(15,23,42,0.10)"/>
-
     <circle cx="46" cy="46" r="5" fill="#EF4444" opacity="0.8"/>
     <circle cx="64" cy="46" r="5" fill="#F59E0B" opacity="0.8"/>
     <circle cx="82" cy="46" r="5" fill="#10B981" opacity="0.8"/>
-    <text x="410" y="50" text-anchor="end" class="mono" font-size="11" fill="#475569">portrait.ascii</text>
-    <line x1="24" y1="66" x2="444" y2="66" stroke="rgba(15,23,42,0.08)"/>
+    <text x="424" y="50" text-anchor="end" class="mono" font-size="11" fill="#475569">SYSTEM / ONLINE</text>
 
     <g transform="translate(64,100)">
       <animateTransform attributeName="transform" type="translate" values="64,100;64,92;64,100" dur="6s" repeatCount="indefinite" additive="sum"/>
@@ -150,35 +151,12 @@
       </g>
     </g>
 
-    <text x="64" y="410" class="mono" font-size="10.5" fill="#475569" letter-spacing="1">CREATIVITY</text>
-    <rect x="64" y="418" width="316" height="6" rx="3" fill="rgba(15,23,42,0.08)"/>
-    <rect x="64" y="418" width="0" height="6" rx="3" fill="url(#accentGrad)">
-      <animate attributeName="width" from="0" to="290" dur="1.4s" begin="3.4s" fill="freeze"/>
-    </rect>
-
-    <text x="64" y="450" class="mono" font-size="10.5" fill="#475569" letter-spacing="1">CODE QUALITY</text>
-    <rect x="64" y="458" width="316" height="6" rx="3" fill="rgba(15,23,42,0.08)"/>
-    <rect x="64" y="458" width="0" height="6" rx="3" fill="url(#accentGrad)">
-      <animate attributeName="width" from="0" to="305" dur="1.4s" begin="3.6s" fill="freeze"/>
-    </rect>
-
-    <rect x="24" y="24" width="420" height="4" fill="url(#scanGrad)" opacity="0.6">
-      <animate attributeName="y" values="24;586;24" dur="5s" repeatCount="indefinite"/>
-    </rect>
     <path d="M24 24 L200 24 L60 586 L24 586 Z" fill="#0F172A" opacity="0.02"/>
   </g>
 
   <!-- ============ RIGHT PANEL ============ -->
   <g clip-path="url(#rightClip)">
-    <rect x="464" y="24" width="692" height="562" rx="18" fill="url(#panelFill)"/>
-    <rect x="464" y="24" width="692" height="562" rx="18" fill="none" stroke="rgba(15,23,42,0.08)" stroke-width="1"/>
-    <rect x="464" y="24" width="692" height="2" fill="rgba(15,23,42,0.10)"/>
-
-    <circle cx="486" cy="46" r="5" fill="#EF4444" opacity="0.8"/>
-    <circle cx="504" cy="46" r="5" fill="#F59E0B" opacity="0.8"/>
-    <circle cx="522" cy="46" r="5" fill="#10B981" opacity="0.8"/>
-    <text x="1136" y="50" text-anchor="end" class="mono" font-size="11" fill="#475569">~/profile.sh</text>
-    <line x1="464" y1="66" x2="1156" y2="66" stroke="rgba(15,23,42,0.08)"/>
+    <text x="1136" y="50" text-anchor="end" class="mono" font-size="11" fill="#475569">PROFILE DATA</text>
 
     <text x="504" y="100" class="mono" font-size="17" fill="#0F172A" opacity="0">Hi <tspan>👋</tspan>
       <animate attributeName="opacity" to="1" dur="0.01s" begin="0.2s" fill="freeze"/>
@@ -209,110 +187,104 @@
     <g class="mono" font-size="13" fill="#0F172A">
       <text x="504" y="240" opacity="0"><tspan fill="#475569">📍 Location  </tspan> Malang, East Java, Indonesia
         <animate attributeName="opacity" to="1" dur="0.01s" begin="1.9s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="1.9s" fill="freeze"/>
       </text>
       <text x="504" y="266" opacity="0"><tspan fill="#475569">🎓 Education  </tspan> SMK Telkom Malang — Software Engineering (RPL)
         <animate attributeName="opacity" to="1" dur="0.01s" begin="2.2s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="2.2s" fill="freeze"/>
       </text>
       <text x="504" y="292" opacity="0"><tspan fill="#475569">🚀 Focus  </tspan> Full Stack Dev — Next.js • NestJS • Prisma • PostgreSQL
         <animate attributeName="opacity" to="1" dur="0.01s" begin="2.5s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="2.5s" fill="freeze"/>
       </text>
       <text x="504" y="318" opacity="0"><tspan fill="#475569">🌐 Portfolio  </tspan> Coming Soon
         <animate attributeName="opacity" to="1" dur="0.01s" begin="2.8s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="2.8s" fill="freeze"/>
       </text>
       <text x="504" y="344" opacity="0"><tspan fill="#475569">📧 Email  </tspan> your-email@example.com
         <animate attributeName="opacity" to="1" dur="0.01s" begin="3.1s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="3.1s" fill="freeze"/>
       </text>
     </g>
 
-    <text x="504" y="374" class="sys" font-size="13" font-weight="700" fill="#475569" letter-spacing="1.5" opacity="0">SKILLS
+    <text x="504" y="374" class="sys" font-size="13" font-weight="700" fill="#475569" letter-spacing="1.5" opacity="0">ABOUT ME
       <animate attributeName="opacity" to="1" dur="0.01s" begin="3.3s" fill="freeze"/>
     </text>
 
-    <g class="mono" font-size="12" font-weight="600">
-      <!-- row 1 -->
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.36s" fill="freeze"/>
+    <g class="mono" font-size="13" fill="#334155" opacity="0">
+      <text x="504" y="406">I am a software engineering student who enjoys building</text>
+      <text x="504" y="432">clean, useful web experiences from idea to deployment.</text>
+      <text x="504" y="458" fill="#0E7490">Always learning, experimenting, and improving.</text>
+      <animate attributeName="opacity" to="1" dur="0.01s" begin="3.7s" fill="freeze"/>
+      <g display="none">
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.70s" fill="freeze"/>
         <rect x="504" y="384" width="73" height="27" rx="13.5" fill="rgba(37,99,235,0.10)" stroke="#2563EB" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="540.5" y="402" text-anchor="middle" fill="#1D4ED8">React</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="3.36s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.42s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.70s" fill="freeze"/>
         <rect x="585" y="384" width="88" height="27" rx="13.5" fill="rgba(6,182,212,0.10)" stroke="#06B6D4" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="629" y="402" text-anchor="middle" fill="#0E7490">Next.js</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="3.7s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.48s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.70s" fill="freeze"/>
         <rect x="681" y="384" width="112" height="27" rx="13.5" fill="rgba(37,99,235,0.10)" stroke="#2563EB" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="737" y="402" text-anchor="middle" fill="#1D4ED8">TypeScript</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="4s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.54s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.70s" fill="freeze"/>
         <rect x="801" y="384" width="112" height="27" rx="13.5" fill="rgba(6,182,212,0.10)" stroke="#06B6D4" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="857" y="402" text-anchor="middle" fill="#0E7490">JavaScript</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="4.3s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.6s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.70s" fill="freeze"/>
         <rect x="921" y="384" width="88" height="27" rx="13.5" fill="rgba(16,185,129,0.10)" stroke="#10B981" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="965" y="402" text-anchor="middle" fill="#047857">Node.js</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="4.6s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.66s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.70s" fill="freeze"/>
         <rect x="1017" y="384" width="81" height="27" rx="13.5" fill="rgba(37,99,235,0.10)" stroke="#2563EB" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="1057.5" y="402" text-anchor="middle" fill="#1D4ED8">NestJS</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="4.9s" repeatCount="indefinite"/>
       </g>
 
       <!-- row 2 -->
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.72s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.06s" fill="freeze"/>
         <rect x="504" y="419" width="112" height="27" rx="13.5" fill="rgba(6,182,212,0.10)" stroke="#06B6D4" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="560" y="437" text-anchor="middle" fill="#0E7490">Express.js</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="5.2s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.78s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.06s" fill="freeze"/>
         <rect x="624" y="419" width="127" height="27" rx="13.5" fill="rgba(16,185,129,0.10)" stroke="#10B981" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="687.5" y="437" text-anchor="middle" fill="#047857">Tailwind CSS</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="5.5s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.84s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.06s" fill="freeze"/>
         <rect x="759" y="419" width="81" height="27" rx="13.5" fill="rgba(37,99,235,0.10)" stroke="#2563EB" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="799.5" y="437" text-anchor="middle" fill="#1D4ED8">Prisma</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="5.8s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.9s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.06s" fill="freeze"/>
         <rect x="848" y="419" width="112" height="27" rx="13.5" fill="rgba(6,182,212,0.10)" stroke="#06B6D4" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="904" y="437" text-anchor="middle" fill="#0E7490">PostgreSQL</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="6.1s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="3.96s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.06s" fill="freeze"/>
         <rect x="968" y="419" width="73" height="27" rx="13.5" fill="rgba(16,185,129,0.10)" stroke="#10B981" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="1004.5" y="437" text-anchor="middle" fill="#047857">MySQL</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="6.4s" repeatCount="indefinite"/>
       </g>
 
       <!-- row 3 -->
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.02s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.42s" fill="freeze"/>
         <rect x="504" y="454" width="81" height="27" rx="13.5" fill="rgba(37,99,235,0.10)" stroke="#2563EB" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="544.5" y="472" text-anchor="middle" fill="#1D4ED8">Docker</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="6.7s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.08s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.42s" fill="freeze"/>
         <rect x="593" y="454" width="57" height="27" rx="13.5" fill="rgba(6,182,212,0.10)" stroke="#06B6D4" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="621.5" y="472" text-anchor="middle" fill="#0E7490">Git</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="7s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.14s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.42s" fill="freeze"/>
         <rect x="658" y="454" width="81" height="27" rx="13.5" fill="rgba(16,185,129,0.10)" stroke="#10B981" stroke-width="1" filter="url(#pillGlow)"/>
-        <text x="698.5" y="472" text-anchor="middle" fill="#047857">GitHub</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="7.3s" repeatCount="indefinite"/>
+        <text x="698.5" y="472" text-anchor="middle" fill="#047857">Discord</text>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.2s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.42s" fill="freeze"/>
         <rect x="747" y="454" width="73" height="27" rx="13.5" fill="rgba(37,99,235,0.10)" stroke="#2563EB" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="783.5" y="472" text-anchor="middle" fill="#1D4ED8">Figma</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="7.6s" repeatCount="indefinite"/>
       </g>
-      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.26s" fill="freeze"/>
+      <g class="pill" opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.42s" fill="freeze"/>
         <rect x="828" y="454" width="81" height="27" rx="13.5" fill="rgba(6,182,212,0.10)" stroke="#06B6D4" stroke-width="1" filter="url(#pillGlow)"/>
         <text x="868.5" y="472" text-anchor="middle" fill="#0E7490">Python</text>
-        <animateTransform attributeName="transform" type="scale" values="1;1.035;1" dur="4s" begin="7.9s" repeatCount="indefinite"/>
+      </g>
       </g>
     </g>
 
@@ -320,9 +292,9 @@
 
     <!-- social icons -->
     <g opacity="0"><animate attributeName="opacity" to="1" dur="0.01s" begin="4.4s" fill="freeze"/>
-      <g filter="url(#glow)">
+      <g filter="url(#glow)" aria-label="Discord: kxfnat">
         <circle cx="524" cy="524" r="16" fill="rgba(15,23,42,0.03)" stroke="rgba(15,23,42,0.10)"/>
-        <path d="M524 514.4c-5.9 0-10.6 4.7-10.6 10.6 0 4.7 3 8.7 7.3 10.1.5.1.7-.2.7-.5v-2c-2.9.6-3.6-1.4-3.6-1.4-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1 1 1.6 2.5 1.2 3.1.9.1-.7.4-1.2.6-1.4-2.3-.3-4.8-1.2-4.8-5.1 0-1.2.4-2.1 1.1-2.8-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.9 1.1a10.2 10.2 0 0 1 5.3 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.5.1 2.8.7.7 1.1 1.6 1.1 2.8 0 4-2.5 4.8-4.8 5.1.4.3.7 1 .7 2v2.9c0 .3.2.6.7.5a10.6 10.6 0 0 0 7.3-10.1c0-5.9-4.7-10.6-10.6-10.6z" fill="#0F172A"/>
+        <path d="M516 518.5c2.1-1.5 4.4-2.2 8-2.2s5.9.7 8 2.2c.8 2.1 1.2 4.2 1.2 6.5 0 2.6-.6 4.7-1.7 6.6-1.6-.6-2.5-1-3.9-1.8.3-.2.6-.5.9-.7-3 1.4-6.5 1.4-9.5 0 .3.2.6.5.9.7-1.4.8-2.3 1.2-3.9 1.8-1.1-1.9-1.7-4-1.7-6.6 0-2.3.4-4.4 1.2-6.5Zm5.3 8.6c.9 0 1.6-.9 1.6-2s-.7-2-1.6-2-1.6.9-1.6 2 .7 2 1.6 2Zm5.4 0c.9 0 1.6-.9 1.6-2s-.7-2-1.6-2-1.6.9-1.6 2 .7 2 1.6 2Z" fill="#0F172A"/>
       </g>
       <g filter="url(#glow)">
         <circle cx="572" cy="524" r="16" fill="rgba(15,23,42,0.03)" stroke="rgba(15,23,42,0.10)"/>
@@ -340,13 +312,10 @@
         <ellipse cx="668" cy="524" rx="4" ry="9" fill="none" stroke="#059669" stroke-width="1.2"/>
         <line x1="659" y1="524" x2="677" y2="524" stroke="#059669" stroke-width="1.2"/>
       </g>
-      <text x="700" y="529" class="mono" font-size="11.5" fill="#475569">github · linkedin · instagram · portfolio</text>
+      <text x="700" y="529" class="mono" font-size="11.5" fill="#475569">discord: kxfnat · linkedin · instagram · portfolio</text>
     </g>
 
     <path d="M464 24 L700 24 L560 586 L464 586 Z" fill="#0F172A" opacity="0.015"/>
-    <rect x="464" y="24" width="692" height="4" fill="url(#scanGrad)" opacity="0.4">
-      <animate attributeName="y" values="24;586;24" dur="6.5s" begin="1s" repeatCount="indefinite"/>
-    </rect>
   </g>
 </g>
 </svg>
