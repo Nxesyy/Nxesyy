@@ -2,7 +2,7 @@
 <defs>
   <clipPath id="canvasClip"><rect x="0" y="0" width="1180" height="610" rx="28"/></clipPath>
   <clipPath id="leftClip"><rect x="24" y="24" width="430" height="562" rx="18"/></clipPath>
-  <clipPath id="rightClip"><rect x="454" y="24" width="702" height="562" rx="18"/></clipPath>
+  <clipPath id="rightClip"><rect x="24" y="24" width="1132" height="562" rx="18"/></clipPath>
 
   <radialGradient id="orbBlue" cx="50%" cy="50%" r="50%">
     <stop offset="0%" stop-color="#2563EB" stop-opacity="0.55"/>
@@ -119,7 +119,6 @@
   <!-- ============ LEFT PANEL ============ -->
   <rect x="24" y="24" width="1132" height="562" rx="18" fill="url(#panelFill)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
   <line x1="24" y1="66" x2="1156" y2="66" stroke="rgba(255,255,255,0.08)"/>
-  <line x1="454" y1="66" x2="454" y2="586" stroke="rgba(255,255,255,0.08)"/>
   <rect x="24" y="24" width="1132" height="4" fill="url(#scanGrad)" opacity="0.5">
     <animate attributeName="y" values="24;586;24" dur="5.8s" repeatCount="indefinite"/>
   </rect>
@@ -127,36 +126,12 @@
     <circle cx="46" cy="46" r="5" fill="#EF4444" opacity="0.8"/>
     <circle cx="64" cy="46" r="5" fill="#F59E0B" opacity="0.8"/>
     <circle cx="82" cy="46" r="5" fill="#10B981" opacity="0.8"/>
-    <text x="424" y="50" text-anchor="end" class="mono" font-size="11" fill="#94A3B8">SYSTEM / ONLINE</text>
-
-    <g transform="translate(64,100)">
-      <animateTransform attributeName="transform" type="translate" values="64,100;64,92;64,100" dur="6s" repeatCount="indefinite" additive="sum"/>
-      <g class="mono" font-size="13" fill="url(#asciiGrad)" filter="url(#glow)">
-        <text x="0" y="0"   opacity="0">   ╔══════════════╗<animate attributeName="opacity" to="1" dur="0.01s" begin="0.1s" fill="freeze"/></text>
-        <text x="0" y="16"  opacity="0">   ║ ▓▓▓▓▓▓▓▓▓▓▓▓ ║<animate attributeName="opacity" to="1" dur="0.01s" begin="0.3s" fill="freeze"/></text>
-        <text x="0" y="32"  opacity="0">   ║▓▓░░░░░░░░░░▓▓║<animate attributeName="opacity" to="1" dur="0.01s" begin="0.5s" fill="freeze"/></text>
-        <text x="0" y="48"  opacity="0">   ║▓▓░░▓░░░░▓░░▓▓║<animate attributeName="opacity" to="1" dur="0.01s" begin="0.7s" fill="freeze"/></text>
-        <text x="0" y="64"  opacity="0">   ║▓▓░░░░░░░░░░▓▓║<animate attributeName="opacity" to="1" dur="0.01s" begin="0.9s" fill="freeze"/></text>
-        <text x="0" y="80"  opacity="0">   ║▓▓░░▓▓▓▓▓▓░░▓▓║<animate attributeName="opacity" to="1" dur="0.01s" begin="1.1s" fill="freeze"/></text>
-        <text x="0" y="96"  opacity="0">   ║ ▓▓░░░░░░░░▓▓ ║<animate attributeName="opacity" to="1" dur="0.01s" begin="1.3s" fill="freeze"/></text>
-        <text x="0" y="112" opacity="0">   ║  ▓▓▓▓▓▓▓▓▓▓  ║<animate attributeName="opacity" to="1" dur="0.01s" begin="1.5s" fill="freeze"/></text>
-        <text x="0" y="128" opacity="0">   ╚══════╦═══════╝<animate attributeName="opacity" to="1" dur="0.01s" begin="1.7s" fill="freeze"/></text>
-        <text x="0" y="144" opacity="0">      ┌───╨───┐    <animate attributeName="opacity" to="1" dur="0.01s" begin="1.9s" fill="freeze"/></text>
-        <text x="0" y="160" opacity="0">      │ SYSTEM │    <animate attributeName="opacity" to="1" dur="0.01s" begin="2.1s" fill="freeze"/></text>
-        <text x="0" y="176" opacity="0">      │ ONLINE │    <animate attributeName="opacity" to="1" dur="0.01s" begin="2.3s" fill="freeze"/></text>
-        <text x="0" y="192" opacity="0">      └───────┘    <animate attributeName="opacity" to="1" dur="0.01s" begin="2.5s" fill="freeze"/></text>
-        <text x="0" y="216" opacity="0" fill="#94A3B8">&gt; booting_avatar...<animate attributeName="opacity" to="1" dur="0.01s" begin="2.7s" fill="freeze"/></text>
-        <text x="0" y="234" opacity="0" fill="#94A3B8">&gt; loading_modules...<animate attributeName="opacity" to="1" dur="0.01s" begin="2.9s" fill="freeze"/></text>
-        <text x="0" y="252" opacity="0" fill="#94A3B8">&gt; status: ready<tspan opacity="0"><animate attributeName="opacity" values="1;0;1" dur="1s" begin="3.1s" repeatCount="indefinite"/>_</tspan><animate attributeName="opacity" to="1" dur="0.01s" begin="3.1s" fill="freeze"/></text>
-      </g>
-    </g>
 
     <path d="M24 24 L200 24 L60 586 L24 586 Z" fill="#FFFFFF" opacity="0.03"/>
   </g>
 
   <!-- ============ RIGHT PANEL ============ -->
-  <g clip-path="url(#rightClip)">
-    <text x="1136" y="50" text-anchor="end" class="mono" font-size="11" fill="#94A3B8">PROFILE DATA</text>
+  <g clip-path="url(#rightClip)" transform="translate(-440 0)">
 
     <text x="504" y="100" class="mono" font-size="17" fill="#F8FAFC" opacity="0">Hi <tspan>👋</tspan>
       <animate attributeName="opacity" to="1" dur="0.01s" begin="0.2s" fill="freeze"/>
@@ -185,23 +160,23 @@
     <line x1="504" y1="212" x2="1116" y2="212" stroke="rgba(255,255,255,0.08)"/>
 
     <g class="mono" font-size="13" fill="#F8FAFC">
-      <text x="504" y="240" opacity="0"><tspan fill="#94A3B8">📍 Location  </tspan> Malang, East Java, Indonesia
+      <text x="504" y="240" opacity="0"><tspan fill="#94A3B8"> Location  </tspan> Malang, East Java, Indonesia
         <animate attributeName="opacity" to="1" dur="0.01s" begin="1.9s" fill="freeze"/>
         <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="1.9s" fill="freeze"/>
       </text>
-      <text x="504" y="266" opacity="0"><tspan fill="#94A3B8">🎓 Education  </tspan> SMK Telkom Malang — Software Engineering (RPL)
+      <text x="504" y="266" opacity="0"><tspan fill="#94A3B8"> Education  </tspan> SMK Telkom Malang — Software Engineering (RPL)
         <animate attributeName="opacity" to="1" dur="0.01s" begin="2.2s" fill="freeze"/>
         <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="2.2s" fill="freeze"/>
       </text>
-      <text x="504" y="292" opacity="0"><tspan fill="#94A3B8">🚀 Focus  </tspan> Full Stack Dev — Next.js • NestJS • Prisma • PostgreSQL
+      <text x="504" y="292" opacity="0"><tspan fill="#94A3B8"> Focus  </tspan> Full Stack Dev — Next.js • NestJS • Prisma • PostgreSQL
         <animate attributeName="opacity" to="1" dur="0.01s" begin="2.5s" fill="freeze"/>
         <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="2.5s" fill="freeze"/>
       </text>
-      <text x="504" y="318" opacity="0"><tspan fill="#94A3B8">🌐 Portfolio  </tspan> Coming Soon
+      <text x="504" y="318" opacity="0"><tspan fill="#94A3B8"> Portfolio  </tspan> Coming Soon
         <animate attributeName="opacity" to="1" dur="0.01s" begin="2.8s" fill="freeze"/>
         <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="2.8s" fill="freeze"/>
       </text>
-      <text x="504" y="344" opacity="0"><tspan fill="#94A3B8">📧 Email  </tspan> your-email@example.com
+      <text x="504" y="344" opacity="0"><tspan fill="#94A3B8"> Email  </tspan> dmaru6494@gmail.com
         <animate attributeName="opacity" to="1" dur="0.01s" begin="3.1s" fill="freeze"/>
         <animateTransform attributeName="transform" type="translate" values="0 10;0 0" dur="0.38s" begin="3.1s" fill="freeze"/>
       </text>
@@ -242,10 +217,37 @@
         <ellipse cx="668" cy="524" rx="4" ry="9" fill="none" stroke="#34D399" stroke-width="1.2"/>
         <line x1="659" y1="524" x2="677" y2="524" stroke="#34D399" stroke-width="1.2"/>
       </g>
-      <text x="700" y="529" class="mono" font-size="11.5" fill="#94A3B8">discord: kxfnat · linkedin · instagram · portfolio</text>
+      <text x="700" y="529" class="mono" font-size="11.5" fill="#94A3B8">discord: kxfnat · linkedin · instagram: @Nxesyy · portfolio</text>
     </g>
 
     <path d="M464 24 L700 24 L560 586 L464 586 Z" fill="#FFFFFF" opacity="0.02"/>
+  </g>
+
+  <!-- featured projects -->
+  <g class="mono" opacity="0">
+    <animate attributeName="opacity" to="1" dur="0.01s" begin="3.7s" fill="freeze"/>
+    <text x="730" y="116" font-size="13" font-weight="700" fill="#94A3B8" letter-spacing="1.5">FEATURED PROJECTS</text>
+
+    <g transform="translate(730,136)">
+      <rect width="360" height="82" rx="12" fill="rgba(124,58,237,0.10)" stroke="rgba(124,58,237,0.55)"/>
+      <text x="20" y="30" font-size="14" font-weight="700" fill="#E9D5FF">AI Study Assistant</text>
+      <text x="20" y="53" font-size="11.5" fill="#CBD5E1">Personal AI-powered study companion</text>
+      <text x="20" y="70" font-size="10.5" fill="#A78BFA">IN PROGRESS</text>
+    </g>
+
+    <g transform="translate(730,230)">
+      <rect width="360" height="82" rx="12" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.45)"/>
+      <text x="20" y="30" font-size="14" font-weight="700" fill="#A5F3FC"> Real-Time Chat App </text>
+      <text x="20" y="53" font-size="11.5" fill="#CBD5E1">A simple real-time messaging application</text>
+      <text x="20" y="70" font-size="10.5" fill="#67E8F9">PREPARING</text>
+    </g>
+
+    <g transform="translate(730,324)">
+      <rect width="360" height="82" rx="12" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.45)"/>
+      <text x="20" y="30" font-size="14" font-weight="700" fill="#A7F3D0"> None </text>
+      <text x="20" y="53" font-size="11.5" fill="#CBD5E1"> None </text>
+      <text x="20" y="70" font-size="10.5" fill="#6EE7B7">COMING SOON</text>
+    </g>
   </g>
 </g>
 </svg>
