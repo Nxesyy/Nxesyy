@@ -182,7 +182,7 @@
     <text x="504" y="112" class="mono" font-size="19" fill="#F8FAFC" opacity="0">Hi <tspan>👋</tspan>
       <animate attributeName="opacity" to="1" dur="0.01s" begin="0.2s" fill="freeze"/>
     </text>
-    <text x="504" y="156" class="sys" font-size="36" font-weight="700" fill="url(#accentGrad)" opacity="0">I'm Alex Chen
+    <text x="504" y="156" class="sys" font-size="36" font-weight="700" fill="url(#accentGrad)" opacity="0">I'm Gesang Rahmatulloh D.
       <animate attributeName="opacity" to="1" dur="0.01s" begin="0.5s" fill="freeze"/>
     </text>
 
